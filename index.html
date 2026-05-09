@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo List</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>Todo List</h1>
+      <p>Capture tasks, mark complete, and keep progress in the browser.</p>
+    </header>
+
+    <section class="todo-form">
+      <form id="new-task-form">
+        <input id="task-input" type="text" placeholder="Add a new task..." aria-label="New task" />
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section class="todo-list-section">
+      <div class="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+      <ul id="task-list" class="task-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
